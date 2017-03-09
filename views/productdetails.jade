@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  head
+    title Producto #{id}
+    meta(meta='viewport', content='width=devide-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    link(href='../css/bootstrap-3.3.7-dist/css/bootstrap.min.css', media='all', rel='stylesheet')
+    link(rel='stylesheet', href='../css/estilos.css')
+    script(src='css/bootstrap-3.3.7-dist/js/bootstrap.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  body
+    .container
+      header.row.text-center
+        h3 Práctica 3
+        h5(style='color:black') Carlos Biurrun e Iñigo Olcoz
+      .row.text-center.fondoDiv
+        .col-md-2
+        .col-md-4.menuPortada
+          ul
+            li
+              a(href='../') Home
+            li
+              a(href='../About') About
+            li
+              a(href='../Products') Products
+            li
+              a(href='../Contact') Contact
+        .col-md-6
+          .col-md-4
+            img#producto1.img-responsive(src="../imagenes/#{id}")
+          .col-md-8
+            p!=descripcion

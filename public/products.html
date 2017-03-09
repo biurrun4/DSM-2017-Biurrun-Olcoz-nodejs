@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Products</title>
+	<meta meta="viewport" content="width=devide-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link  href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="all" rel="stylesheet">
+	<link rel="stylesheet"  href="css/estilos.css">
+	<script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function()
+        {
+            $("#producto1").hover(function()
+            {
+                $('#texto1').css("display", "block");//para ponerlo
+                $('#texto2').css("display", "none");
+                $('#texto3').css("display", "none");
+            })
+            $("#producto2").hover(function()
+            {
+                $('#texto2').css("display", "block");//para ponerlo
+                $('#texto1').css("display", "none");
+                $('#texto3').css("display", "none");
+            })
+            $("#producto3").hover(function()
+            {
+                $('#texto3').css("display", "block");//para ponerlo
+                $('#texto1').css("display", "none");
+                $('#texto2').css("display", "none");
+            })
+        })
+    </script>
+
+</head>
+<body>
+	<div class="container">
+		<header class="row text-center">
+      		<h3>Práctica 3</h3>
+      		<h5 style="color:black">Carlos Biurrun e Iñigo Olcoz</h5>
+    	</header>
+    	<div class="row text-center fondoDiv">
+    		<div class="col-md-2"></div>
+    		<div class="col-md-4 menuPortada">
+    			<ul>
+                    <li><a href="./Home">Home</a></li>
+                    <li><a href="./About">About</a></li>
+                    <li><a href="./Products">Products</a></li>
+                    <li><a href="./Contact">Contact</a></li>
+    			</ul>
+    		</div>
+    		<div class="col-md-4">
+    			<div class="row">
+                    <div class="col-md-4"><a href="/1"><img src="../imagenes/osasuna1.jpg" class="img-responsive" id="producto1"></a></div>
+                    <div class="col-md-4"><a href="/2"><img src="../imagenes/paseo1.jpg" class="img-responsive" id="producto2"></a></div>
+                    <div class="col-md-4"><a href="/3"><img src="../imagenes/osasunaverde1.jpg" class="img-responsive" id="producto3"></a></div>         
+                </div>
+                <div>
+                    <br>
+                    <p id="texto1">
+                        Nullam sit amet mauris dui. Duis tristique augue sit amet justo euismod blandit. Nulla eget sagittis erat. Suspendisse eleifend metus sed vestibulum ullamcorper. Nam fermentum nulla sit amet nulla pretium, malesuada congue purus gravida. Phasellus placerat est a nunc consectetur pulvinar. Aliquam a tempus erat. 
+                    </p>
+                    <p id="texto2">
+                       Curabitur risus purus, luctus vel massa ut, pretium hendrerit justo. Nullam ut interdum est, id tristique dui. Pellentesque eget efficitur neque, rhoncus semper lorem. Nunc ac lectus a est pellentesque tincidunt vel eu magna. 
+                    </p>
+                    <p id="texto3">
+                       Cras dapibus consectetur ligula non consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas vel velit sit amet ligula elementum lacinia a non arcu. Aliquam iaculis quam sapien. Fusce pulvinar sagittis semper. Proin sit amet consequat dui, vel finibus odio. 
+                    </p>
+                </div>
+    		</div>
+    		<div class="col-md-2"></div>	
+    	</div>
+	</div>
+</body>

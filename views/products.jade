@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+  head
+    title Products
+    meta(meta='viewport', content='width=devide-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    link(href='css/bootstrap-3.3.7-dist/css/bootstrap.min.css', media='all', rel='stylesheet')
+    link(rel='stylesheet', href='css/estilos.css')
+    script(src='css/bootstrap-3.3.7-dist/js/bootstrap.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script.
+      $(document).ready(function()
+      {
+      $("#producto1").hover(function()
+      {
+      $('#texto1').css("display", "block");//para ponerlo
+      $('#texto2').css("display", "none");
+      $('#texto3').css("display", "none");
+      })
+      $("#producto2").hover(function()
+      {
+      $('#texto2').css("display", "block");//para ponerlo
+      $('#texto1').css("display", "none");
+      $('#texto3').css("display", "none");
+      })
+      $("#producto3").hover(function()
+      {
+      $('#texto3').css("display", "block");//para ponerlo
+      $('#texto1').css("display", "none");
+      $('#texto2').css("display", "none");
+      })
+      })
+  body
+    .container
+      header.row.text-center
+        h3 Práctica 3
+        h5(style='color:black') Carlos Biurrun e Iñigo Olcoz
+      .row.text-center.fondoDiv
+        .col-md-2
+        .col-md-4.menuPortada
+          ul
+            li
+              a(href='./') Home
+            li
+              a(href='./About') About
+            li
+              a(href='./Products') Products
+            li
+              a(href='./Contact') Contact
+        .col-md-6
+          .row
+          .col-md-4
+            a(href='/products/1')
+              img#producto1.img-responsive(src='../imagenes/osasuna1.jpg')
+          .col-md-4
+            a(href='/products/2')
+              img#producto2.img-responsive(src='../imagenes/paseo1.jpg')
+          .col-md-4
+            a(href='/products/3')
+              img#producto3.img-responsive(src='../imagenes/osasunaverde1.jpg')
+          .row
+            br
+            p#texto1
+              | Nullam sit amet mauris dui. Duis tristique augue sit amet justo euismod blandit. Nulla eget sagittis erat. Suspendisse eleifend metus sed vestibulum ullamcorper. Nam fermentum nulla sit amet nulla pretium, malesuada congue purus gravida. Phasellus placerat est a nunc consectetur pulvinar. Aliquam a tempus erat.
+            p#texto2
+              | Curabitur risus purus, luctus vel massa ut, pretium hendrerit justo. Nullam ut interdum est, id tristique dui. Pellentesque eget efficitur neque, rhoncus semper lorem. Nunc ac lectus a est pellentesque tincidunt vel eu magna.
+            p#texto3
+              | Cras dapibus consectetur ligula non consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas vel velit sit amet ligula elementum lacinia a non arcu. Aliquam iaculis quam sapien. Fusce pulvinar sagittis semper. Proin sit amet consequat dui, vel finibus odio.
+        

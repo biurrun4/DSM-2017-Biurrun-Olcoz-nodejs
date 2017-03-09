@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    title Portada
+    meta(meta='viewport', content='width=devide-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    link(href='css/bootstrap-3.3.7-dist/css/bootstrap.min.css', media='all', rel='stylesheet')
+    link(rel='stylesheet', href='css/estilos.css')
+    script(src='css/bootstrap-3.3.7-dist/js/bootstrap.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  body(background='imagenes/fondo0040.jpg')
+    .container
+      header.row.text-center
+        h3 Práctica 3
+        h5(style='color:black') Carlos Biurrun e Iñigo Olcoz
+      .row.text-center.fondoDiv.col-md-12.col-sm-12
+        .col-md-2.col-sm-2
+        .col-md-4.col-sm-4.menuPortada
+          ul
+            li
+              a(href='./') Home
+            li
+              a(href='./about') About
+            li
+              a(href='./products') Products
+            li
+              a(href='./contact') Contact
+        .col-md-6.col-sm-6
+          img(src='imagenes/portada001.jpg', width='100%')
